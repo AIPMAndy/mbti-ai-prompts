@@ -1,9 +1,102 @@
-# 🧠 MBTI × AI 内容创作提示词系统
+<div align="center">
 
-> 16种人格 × AI深度洞察 = 精准触达百万读者的内容引擎
+# 🧠 MBTI × AI Content Creation Prompt System
+
+> 16 Personality Types × AI Deep Insights = Content Engine for Millions
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![GitHub Stars](https://img.shields.io/github/stars/AIPMAndy/mbti-ai-prompts?style=social)](https://github.com/AIPMAndy/mbti-ai-prompts)
+
+[English](#english) | [简体中文](#中文)
+
+</div>
+
+---
+
+<a name="english"></a>
+
+## 🚀 What Can This System Do?
+
+| Pain Point | Solution |
+|------------|----------|
+| MBTI content is homogeneous | Unique "Style DNA" system for maximum differentiation |
+| Topic selection relies on luck | 5 proven high-traffic series + topic formulas |
+| AI content feels robotic | Few-shot samples + quality checklist for human-like output |
+| Don't know where to start | Ready-to-use prompt system, get started in 10 minutes |
+
+## 📁 File Structure
+
+```
+mbti-ai-prompts/
+├── prompts/
+│   ├── 01-system-prompt.md      # Core system prompt (Style DNA)
+│   ├── 02-topic-generator.md    # Topic generation prompts
+│   └── 03-copywriter.md         # Copywriting prompts
+├── samples/
+│   └── style-samples.md         # Viral content samples
+└── README.md
+```
+
+## ⚡ Quick Start
+
+### Option 1: Direct Use (Any LLM)
+
+1. Use `01-system-prompt.md` as System Prompt
+2. Choose modules from `02-topic-generator.md` or `03-copywriter.md`
+3. Replace `{...}` placeholders
+4. Send to GPT-4 / Claude / other LLMs
+
+### Option 2: Integrate with OpenClaw / Feishu Bot
+
+```yaml
+name: "Andy Writing Assistant"
+system_prompt: |
+  # Copy full content from 01-system-prompt.md
+  ...
+
+tools:
+  - web_search  # Trend tracking
+
+commands:
+  - trigger: "/topic"
+    prompt: |
+      # Select module from 02-topic-generator.md
+  - trigger: "/write"
+    prompt: |
+      # Select module from 03-copywriter.md
+```
+
+## 🔥 High-Traffic Topic Formula
+
+```
+[Personality Type] + [Emotional State/Struggle] + [Solution/New Perspective]
+```
+
+**Proven Series:**
+- 🔮 **Time Travel Series**: When [personality] travels to [scenario]
+- 🚀 **Life Change Series**: How [personality] changes their fate with AI
+- 📈 **Evolution Series**: [personality] from low to high level
+- 💪 **Habits Series**: N habits that make [personality] [achieve X]
+- ✨ **Encounter Series**: When [personality] meets [something]
+
+## 🤝 Author
+
+**Andy | AI Product Expert**
+
+- 🚀 Ex-Tencent / Ex-Baidu AI Product Lead
+- 🦄 LLM Unicorn VP → Startup CEO
+- 🎯 AI Business Strategy Consultant
+
+**WeChat:** AIPMAndy | **GitHub:** [@AIPMAndy](https://github.com/AIPMAndy)
+
+---
+
+<a name="中文"></a>
+
+# 🧠 MBTI × AI 内容创作提示词系统
+
+> 16种人格 × AI深度洞察 = 精准触达百万读者的内容引擎
 
 ## 关于作者
 
@@ -71,18 +164,6 @@ commands:
       # 从 03-copywriter.md 选择模块
 ```
 
-## 核心指令
-
-| 指令 | 功能 | 示例 |
-|------|------|------|
-| `/选题 热点` | 基于 AI 热点生成选题 | 输入热点新闻 |
-| `/选题 组合` | AI话题 × MBTI 创意组合 | 随机生成10个选题 |
-| `/选题 复刻 [标题]` | 分析爆款并复刻 | `/选题 复刻 当INFJ遇到外星人` |
-| `/写文 [选题]` | 生成完整深度文案 | `/写文 INTJ如何借AI改命` |
-| `/写文 改命 [人格]` | AI改命系列 | `/写文 改命 INFJ` |
-| `/写文 穿越 [人格]` | 穿越古代系列 | `/写文 穿越 INTP` |
-| `/写文 进化 [人格]` | 低阶到高阶系列 | `/写文 进化 INFP` |
-
 ## 高流量选题公式
 
 ```
@@ -136,34 +217,26 @@ MBTI 内容赛道正在爆发，但大多数创作者还在用最原始的方式
 
 ---
 
-## 联系我
+## 📄 许可证 / License
 
-- **微信**：AIPMAndy
-- **公众号**：AI酋长Andy
-- **课程咨询**：AI + MBTI 人生管理（4-6周系统课）
+Apache License 2.0 + Additional Terms
 
----
+**✅ Allowed / 允许**
+- Personal learning / 个人学习
+- Internal enterprise use / 企业内部使用
+- Open source citation (keep author info) / 开源引用（保留作者信息）
 
-**Created by AI酋长Andy** | 用 AI 放大你的影响力
+**❌ Prohibited (without authorization) / 禁止（未授权）**
+- De-branding / 去品牌化
+- Commercial SaaS / 商业 SaaS
+- Resale / 转售倒卖
 
----
-
-## 📄 许可证
-
-本项目基于 Apache License 2.0，附加以下条款：
-
-**✅ 允许**
-- 个人学习研究：免费，随便用
-- 企业内部使用：免费，可二次开发
-- 开源项目引用：需保留作者信息
-
-**❌ 禁止（除非获得书面授权）**
-- 去品牌化：禁止移除 "AI酋长Andy" 相关标识
-- 商业 SaaS：禁止用源码提供付费多租户服务
-- 转售/倒卖：禁止打包出售或作为付费课程核心交付物
-
-**商业授权联系**：微信 AIPMAndy
+**Commercial licensing / 商业授权联系**：WeChat AIPMAndy
 
 ---
+
+<p align="center">
+  ⭐ If this helps, please give it a star! / 觉得有用请点个 Star！
+</p>
 
 **Copyright © 2026 AI酋长Andy. All rights reserved.**
